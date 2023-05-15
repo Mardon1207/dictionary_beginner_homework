@@ -8,7 +8,7 @@ def find_int_keys(data: dict) -> list:
     """
     s=[]
     for i in data.keys():
-        if str(i).isdigit():
+        if type(i)==int:
             s.append(i)
     return s
 data = {
